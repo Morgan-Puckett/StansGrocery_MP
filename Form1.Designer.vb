@@ -30,10 +30,7 @@ Partial Class Form1
         Me.FilterByCategoryRadioButton = New System.Windows.Forms.RadioButton()
         Me.FilterByAisleRadioButton = New System.Windows.Forms.RadioButton()
         Me.SearchButton = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.ResetButton = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.FilterGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,14 +38,14 @@ Partial Class Form1
         '
         Me.DisplayListBox.FormattingEnabled = True
         Me.DisplayListBox.ItemHeight = 20
-        Me.DisplayListBox.Location = New System.Drawing.Point(535, 11)
+        Me.DisplayListBox.Location = New System.Drawing.Point(12, 12)
         Me.DisplayListBox.Name = "DisplayListBox"
         Me.DisplayListBox.Size = New System.Drawing.Size(253, 424)
         Me.DisplayListBox.TabIndex = 0
         '
         'SearchTextBox
         '
-        Me.SearchTextBox.Location = New System.Drawing.Point(106, 57)
+        Me.SearchTextBox.Location = New System.Drawing.Point(455, 323)
         Me.SearchTextBox.Name = "SearchTextBox"
         Me.SearchTextBox.Size = New System.Drawing.Size(125, 27)
         Me.SearchTextBox.TabIndex = 2
@@ -56,15 +53,15 @@ Partial Class Form1
         'FilterComboBox
         '
         Me.FilterComboBox.FormattingEnabled = True
-        Me.FilterComboBox.Location = New System.Drawing.Point(63, 171)
+        Me.FilterComboBox.Location = New System.Drawing.Point(271, 263)
         Me.FilterComboBox.Name = "FilterComboBox"
-        Me.FilterComboBox.Size = New System.Drawing.Size(151, 28)
+        Me.FilterComboBox.Size = New System.Drawing.Size(105, 28)
         Me.FilterComboBox.TabIndex = 3
         '
         'DisplayLabel
         '
         Me.DisplayLabel.AutoSize = True
-        Me.DisplayLabel.Location = New System.Drawing.Point(12, 139)
+        Me.DisplayLabel.Location = New System.Drawing.Point(271, 113)
         Me.DisplayLabel.Name = "DisplayLabel"
         Me.DisplayLabel.Size = New System.Drawing.Size(99, 20)
         Me.DisplayLabel.TabIndex = 4
@@ -74,9 +71,9 @@ Partial Class Form1
         '
         Me.FilterGroupBox.Controls.Add(Me.FilterByCategoryRadioButton)
         Me.FilterGroupBox.Controls.Add(Me.FilterByAisleRadioButton)
-        Me.FilterGroupBox.Location = New System.Drawing.Point(278, 74)
+        Me.FilterGroupBox.Location = New System.Drawing.Point(271, 311)
         Me.FilterGroupBox.Name = "FilterGroupBox"
-        Me.FilterGroupBox.Size = New System.Drawing.Size(162, 125)
+        Me.FilterGroupBox.Size = New System.Drawing.Size(178, 125)
         Me.FilterGroupBox.TabIndex = 5
         Me.FilterGroupBox.TabStop = False
         Me.FilterGroupBox.Text = "FilterGroupBox"
@@ -105,59 +102,29 @@ Partial Class Form1
         '
         'SearchButton
         '
-        Me.SearchButton.Location = New System.Drawing.Point(106, 95)
+        Me.SearchButton.Location = New System.Drawing.Point(455, 357)
         Me.SearchButton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.SearchButton.Name = "SearchButton"
-        Me.SearchButton.Size = New System.Drawing.Size(72, 40)
+        Me.SearchButton.Size = New System.Drawing.Size(125, 36)
         Me.SearchButton.TabIndex = 6
         Me.SearchButton.Text = "Search "
         Me.SearchButton.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(46, 226)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 20)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Label1"
-        '
         'ResetButton
         '
-        Me.ResetButton.Location = New System.Drawing.Point(107, 399)
+        Me.ResetButton.Location = New System.Drawing.Point(455, 396)
         Me.ResetButton.Name = "ResetButton"
-        Me.ResetButton.Size = New System.Drawing.Size(70, 15)
+        Me.ResetButton.Size = New System.Drawing.Size(125, 36)
         Me.ResetButton.TabIndex = 8
         Me.ResetButton.Text = "Reset"
         Me.ResetButton.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(46, 263)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 20)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(46, 293)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 20)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Label3"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 451)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.ClientSize = New System.Drawing.Size(593, 451)
         Me.Controls.Add(Me.ResetButton)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SearchButton)
         Me.Controls.Add(Me.FilterGroupBox)
         Me.Controls.Add(Me.DisplayLabel)
@@ -181,8 +148,5 @@ Partial Class Form1
     Friend WithEvents FilterByCategoryRadioButton As RadioButton
     Friend WithEvents FilterByAisleRadioButton As RadioButton
     Friend WithEvents SearchButton As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents ResetButton As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
 End Class
